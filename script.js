@@ -1,25 +1,6 @@
 "use strict";
 
-// const { red } = require("@material-ui/core/colors");
 
-/*
-console.log(document.querySelector(`.message`).textContent);
-
-// DOM
-// web apis are javascript libraries that are ready for us to use
-
-document.querySelector(`.message`).textContent = `Correct Number!`;
-
-console.log(document.querySelector(`.message`).textContent);
-
-document.querySelector(`.number`).textContent = 13;
-
-document.querySelector(`.score`).textContent = 10;
-
-document.querySelector(`.guess`).value = 23;
-
-console.log(document.querySelector(`.guess`).value);
-*/
 
 let secretNumber = Math.trunc(Math.random() * 20) + 1;
 let score = 20;
@@ -32,10 +13,6 @@ function scrambleSecretNumber() {
 }
 
 function gameOver() {
-  // score === 0
-  //   ? (
-
-  //   : (score = 0);
   if (score === 0) {
     document.querySelector(`body`).style.backgroundColor = `#e34d2b`;
     document.querySelector(`.message`).textContent = `Game Over Lad`;
